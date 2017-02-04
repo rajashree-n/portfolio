@@ -1,0 +1,201 @@
+@import url(http://fonts.googleapis.com/css?family=Yesteryear);
+body {
+  margin: 0;
+  background: #000; 
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+p11{
+  text-align:center;
+  font-family: 'Yesteryear', cursive;
+  font-size: 50px;
+  color: white;
+}
+p1{
+  text-align:center;
+  font-family: 'Yesteryear', cursive;
+  color: white;
+}
+#box { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 25%;
+  margin:2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+#box button { 
+  display: block;
+  width: 60%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#box button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+#footer button { 
+  width: 20%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 2rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#footer button.feed { 
+  width: 3%;
+  padding: .4rem;
+  border: none; 
+  float: right;
+  margin: 1rem auto; 
+  font-size: 2rem;
+  background: rgba(255,255,255,0);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#footer button.home { 
+  width: 3%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 2rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#footer button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+#footer button.feed:hover { 
+   background: rgba(0,0,0,0.5);
+}
+.views  {
+ margin: 80px;
+}
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url() #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+.hexagon {
+  position: relative;
+  width: 200px; 
+  height: 115.47px;
+  margin: 57.74px 0;
+  background-image: url(assets/img/bg2.jpg);
+  background-size: auto 219.3931px;
+  background-position: center;
+  border-left: solid 5px #e2d9d9;
+  border-right: solid 5px #e2d9d9;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 141.42px;
+  height: 141.42px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 24.29px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 190.0000px;
+  height: 109.69655114602891px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-54.8483px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -70.7107px;
+  border-top: solid 7.0711px #e2d9d9;
+  border-right: solid 7.0711px #e2d9d9;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -70.7107px;
+  border-bottom: solid 7.0711px #e2d9d9;
+  border-left: solid 7.0711px #e2d9d9;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 2.8868px;
+  left: 0;
+  width: 190.0000px;
+  height: 109.6966px;
+  z-index: 2;
+  background: inherit;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+
+}
